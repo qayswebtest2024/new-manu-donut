@@ -87,11 +87,12 @@ footer {
 }
 
 /* تصميم المنتجات */
+/* تصميم المنتجات */
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودان ثابتان */
+    gap: 1rem; /* مسافة بين المنتجات */
+    justify-items: center; /* توسيط المنتجات أفقياً */
     margin-top: 1rem;
 }
 
@@ -99,7 +100,8 @@ footer {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 150px;
+    width: 100%; /* عرض المنتج يتناسب مع الأعمدة */
+    max-width: 200px; /* أقصى عرض للمنتج */
     text-align: center;
     padding: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
